@@ -1,4 +1,4 @@
 #include "Employee.h"
 @interface Employee() 
-- (id) initWithName : (NSString *) empName andWithId : (NSInteger) empID;
+- (id) initWithName : (NSString *) name andWithId : (NSInteger) empId;
 @end

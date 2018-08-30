@@ -2,15 +2,15 @@
 #include "EmployeeExtension.h"
 
 @implementation Employee 
-- (id) initWithName : (NSString *) empName andWithId : (NSInteger) empID{
+- (id) initWithName : (NSString *) name andWithId : (NSInteger) empId{
     self = [super init];
-    name = empName;
-    empId = empID;
+    self.name = name;
+    self.empId = empId;
     return self;
 }
 
 - (void) print {
-    NSLog(@"Name of the employee is %@", name);
-    NSLog(@"Employee id is %ld", empId);
+    NSLog(@"Name of the employee is %@", _name);
+    NSLog(@"Employee id is %ld", _empId);
 }
 @end
